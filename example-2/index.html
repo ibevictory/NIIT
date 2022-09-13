@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Toogle example</title>
+    <style>
+      * {
+  box-sizing: border-box;
+}
+/*Flex box to make the control and label line up*/
+
+li {
+  width: 100px;
+  display: Flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+/*size the label and make the on and off parts sit on top of one anothe using positioning*/
+
+label {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+}
+
+label span {
+  position: absolute;
+}
+/*Remobe the defult styling of the checkbox using appearance and create the outer toggle area*/
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  border: 2px solid black;
+  background: #eee;
+  transition: all 0.4s;
+}
+/*style the :: before contemnt to look like the inner toggle switch - the bit that moves*/
+
+input[type="checkbox"]::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 9px;
+  background-color: black;
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 16%;
+  transition: all 0.4s;
+}
+/*change the outer background colour and change the outer toggle switch when the checkbox is checked; use transitions for smooth animation*/
+input[type="checkbox"]:checked{
+  background-color: #fa0;
+  transition: all 0.4s;
+}
+input[type="checkbox"]:checked::before{
+  left: 35%;
+  transition: all 0.4s;
+}
+/*cause the on and off parts of the label to be visible when the checkbox is checked and unchecked respectively*/
+
+input[type="checkbox"] ~ label .on, input[type="checkbox"]:checked ~ label .off {
+  opacity: 0;
+}
+
+input[type="checkbox"] ~ label .off, input[type="checkbox"]:checked ~ label .on {
+  opacity: 1;
+}
+/*make the focus outline a bit more subtle on chrome rather than the defult heavy blue outline*/
+
+input:focus {
+  outline: 1px dotted black;
+}
+
+    </style>
+  </head>
+  <body>
+    <form>
+    <ul>
+      <li>
+        <input type="checkbox" name="power" id="power" value="">
+        <label for="power"><span class="on">On</span><span class="off">Off</span></label>
+      </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <button type="submit" name="button">This is a <strong>submit button</strong></button>
+
+    <input type="submit" name="" value="This is a submit button">
+
+    <br>
+    <hr>
+    <br>
+
+    <button type="reset" name="button">This is a <strong>reset button</strong></button>
+
+    <input type="reset" name="" value="This is a reset button">
+
+    <br>
+    <hr>
+    <br>
+
+    <input type="image" alt="Click me!" src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\Screenshot (24).png" width="80" height="30" name="" value="">
+    <input type="file" name="file" id="file" value="" accept="image/*"multiple>
+    <input type="file" name="file" id="file" value="" accept="image/*;capture=camera">
+    <input type="file" name="file" id="file" value="" accept="video/*;capture=camcorder">
+    <input type="file" name="file" id="file" value="" accept="audio/*;capture=microphone">
+
+    <hr>
+    <div class="">
+      <input type="search" id="search" name="search" value="">
+      <hr>
+      <input type="tell" id="tell" name="tell" value="">
+      <hr>
+      <input type="url" id="url" name="url">
+      <hr>
+      <input type="number" name="age" id="age" min="1" max="10" step="2" value="">
+    </div>
+    </form>
+  </body>
+</html>

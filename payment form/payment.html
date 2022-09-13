@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\payment form\payment.css">
+    <title>Payment</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <h1>Payment Form</h1>
+      <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+      <section>
+        <h2>Contact Information</h2>
+        <fieldset>
+          <legend>Title</legend>
+          <ul>
+            <li>
+              <label for="title_1">
+                <input type="radio" id="title_1" checked name="title" value="M.">
+                Mister
+              </label>
+            </li>
+            <li>
+              <label for="title_2">
+                <input type="radio" id="title_2" name="title" value="Ms.">
+                Miss
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <p>
+          <label for="name">
+            <span>Name: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" id="name" name="username" value="">
+        </p>
+        <p>
+          <label for="mail">
+            <span>Email: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="email" id="mail" name="usermail" value="">
+        </p>
+        <p>
+          <label for="pwd">
+            <span>Password: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="password" id="pwd" name="passwor" value="">
+        </p>
+      </section>
+      <section>
+        <h2>Payment Information</h2>
+        <p>
+          <label for="card">
+            <span>Card type: </span>
+          </label>
+          <select class="" id="card" name="usercard">
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="amex">American Express</option>
+          </select>
+        </p>
+        <p>
+          <label for="number">
+            <span>Card number: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="tel" id="number" name="cardnumber" value="">
+        </p>
+        <p>
+          <label for="date">
+            <span>Expiration date: </span>
+            <strong><abbr title="required">*</abbr></strong>
+            <em>formatted as mm/yy</em>
+          </label>
+          <input type="date" id="date" name="expiration" value="">
+        </p>
+      </section>
+      <p><button type="submit">Validate the payment</button></p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Assignment</title>
+    <link rel="stylesheet" href="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\assignment\assignment-1\text.css">
+  </head>
+  <body>
+    <div id="form">
+    <form class="form" action="index.html" method="post">
+      <h1><b>CONTACT US</b></h1>
+      <div id="list">
+      <ul>
+        <li>
+          <label for="say-hi">
+            <input type="radio" id="say-hi" checked name="say-hi" value="say-hi.">
+            Say Hi
+          </label>
+        </li>
+        <li>
+          <label for="Quote">
+            <input type="radio" id="Quote" name="Quote" value="quote">
+            Get a Quote
+          </label>
+        </li>
+      </ul>
+      </div>
+      <div id="content">
+      <p>
+        <label for="name">
+          Your Name<br>
+        </label>
+        <input type="text" id="name" name="username" value="">
+      </p>
+      <p>
+        <label for="mail">
+          Your Email <br>
+        </label>
+        <input type="email" id="mail" name="usermail" value="">
+      </p>
+      <p>
+
+        <label for="message">
+          <span>Your Message</span><br>
+        </label>
+        <!--
+        <input type="text" id="message" name="message" value="">
+        -->
+        <textarea name="message" rows="3" cols="40"></textarea>
+      </p>
+      </div>
+      <div id="btn">
+      <p>
+        <button type="submit" id="button" name="button"><b>SUBMIT</b></button>
+      </p>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

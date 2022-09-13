@@ -1,0 +1,49 @@
+p {
+  font-size: 1.4rem;
+  color: red;
+  font-family: Heveltica, Arial, sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+h1 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  text-decoration: overline underline;
+}
+.ems li {
+  font-size: 1.3em;
+}
+.rems li {
+  font-size: 1.3rem;
+}
+.target {
+  font-style: italic;
+  text-decoration: overline red wavy;
+}
+.first_para {
+  font-weight: 600;
+  text-transform: lowercase;
+}
+.second_para {
+  text-transform: uppercase;
+}
+.first {
+  font-size: 40px;
+  text-shadow: 4px /*vertical*/ 4px /*horizontal*/ 5px /*blurness*/ red /*color*/;
+}
+h2::after {
+  text-shadow: -1px -1px 1px #aaa,
+  0px 4px 1px rgba(0,0,0,0,5),
+  4px 4px 5px rgba(0,0,0,0,7),
+  0px 0px 7px rgba(0,0,0,0,4),
+}
+p {
+  text-align: center;
+  line-height: 1.5;
+}
+p::first-line {
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}

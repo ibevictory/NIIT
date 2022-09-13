@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms In HTML</title>
+
+
+    <style media="screen">
+      Form {
+        width: 40%;
+        border: 2px solid grey;
+        border-radius: 10px;
+        margin: 20px auto;
+        padding: 30px;
+      }
+      div {
+        margin-top: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      input, textarea {
+        width: 300px;
+      }
+      label {
+        text-align: right;
+        display: inline-block;
+      }
+      .btn {
+        margin: 10px 0 0 70px;
+      }
+      </form>
+    </style>
+  </head>
+  <body style="background-color:beige">
+    <form class="" action="index.html" method="post">
+      <h1>Contact Form</h1>
+      <div class="name">
+        <label for="name">Name</label>
+        <input type="text"  id="name" name="name" value="">
+      </div>
+      <div class="email">
+        <label for="mail">Email</label>
+        <input type="text" id="mail" name="mail" value="">
+      </div>
+      <div class="message">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" ></textarea>
+      </div>
+      <div class="btn">
+        <button type="Submit" name="button">Send your Message</button>
+      </div>
+    </form>
+  </body>
+</html>

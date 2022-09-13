@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML form</title>
+    <link rel="stylesheet" href="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\assignment\assignment-2\text.css">
+  </head>
+  <body>
+    <form class="contact" action="index.html" method="post">
+      <h1><b>Say Hello!</b></h1>
+      <p>
+        <label for="name">
+          Your Name<br>
+        </label>
+        <input type="text" id="name" name="username" value="" placeholder="Enter your name">
+      </p>
+      <p>
+        <label for="mail">
+          Email <br>
+        </label>
+        <input type="email" id="mail" name="usermail" value="" placeholder="Enter your email address">
+      </p>
+      <p class="selectors">
+        <label for="choose-serv">Needed Services <br></label>
+        <select class="choose-serv" name="choose-serv">
+          <option value=""><b>Choose Services</b></option>
+          <option value="ssl-Validate">SSL Validation</option>
+          <option value="web-sec">Web Security</option>
+          <option value="SEO">SEO</option>
+        </select>
+      </p>
+      <p class="selectors">
+        <label for="select-buj">Budget<br></label>
+        <select class="select-buj" name="select-buj">
+          <option value=""><b>Select Budget</b></option>
+          <option value="first-buj">$100-$500</option>
+          <option value="second-buj">$500-$1,000</option>
+          <option value="third buj">$1,000-$2,000</option>
+        </select>
+      </p>
+      <p>
+        <label for="message">
+          <span>Message</span><br>
+        </label>
+        <!--
+        <input type="text" id="message" name="message" value="">
+        -->
+        <textarea name="message" rows="3" cols="40" placeholder="Your message here"></textarea>
+      </p>
+      <p>
+        <button type="submit" id="button" name="button"><b>SUBMIT ➡</b></button>
+      </p>
+    </form>
+  </body>
+</html>
