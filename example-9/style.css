@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 0;
+}
+body {
+  padding: 1em;
+  height: 2000px;
+}
+html {
+  background-color: yellow;
+  font-family: sans-serif;
+}
+p {
+  padding: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+}
+section {
+  display: flex;
+}
+article {
+  flex: 1;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(Screenshot-3-56.png);
+  padding: 1%;
+  overflow: auto;
+}
+article pre {
+  height: 800px;
+}
+.fixed .scroll {
+  margin-right: 1%;
+}
+.fixed {
+  background-attachment: fixed;
+}
+.scroll {
+  background-attachment: scroll;
+}
+.local {
+  background-attachment: local;
+}
+footer {
+  clear: both;
+}
+.box {
+  width: 800px;
+  height: 800px;
+  border: 2px solid teal;
+  border-top-right-radius: 1em 10%;
+}
