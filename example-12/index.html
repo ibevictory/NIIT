@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            border: 0;
+        }
+        .menu {
+            width: 900px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu-container {
+            color: #fff;
+            background: linear-gradient(to right, blue, rgb(210, 30, 30));
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .links {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .login {
+            margin-left: 20px;
+        }
+        .header-container {
+            color: #5995da;
+            background-color: #D6E9fe;
+            display: flex;
+            justify-content: center;
+        }
+        .header {
+            width: 900px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .photo-grid-container {
+            display: flex;
+            justify-content: center;
+        }
+        .photo-grid {
+            width: 900px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+        }
+        .photo-grid-item {
+            border: 1px solid rgb(111, 40, 40);
+            width: 300px;
+            height: 300px;
+        }
+        .first-item {
+            order: 1;
+        }
+        .last-item {
+            order: -1;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            <div class="date">Nov 26, 2019</div>
+            <div class="links">
+                <div class="signup">Sign Up</div>
+                <div class="login">Login</div>
+            </div>
+        </div>
+    </div>
+    <div class="header-container">
+        <div class="header">
+            <div class="subscribe">Subscribe&#9662</div>
+            <div class="logo"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\awesome-logo.svg" alt=""></div>
+            <div class="social"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\social-icons.svg" alt=""></div>
+        </div>
+    </div>
+    <div class="photo-grid-container">
+        <div class="photo-grid">
+            <div class="phot-grid-item first-item">
+                <img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\one.svg" alt="">
+            </div>
+            <div class="photo-grid-item">
+                <img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\two.svg" alt="">
+            </div>
+            <div class="photo-grid-item">
+                <img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\three.svg" alt="">
+            </div>
+            <div class="photo-grid-item">
+                <img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\four.svg" alt="">
+            </div>
+            <div class="photo-grid-item last-item">
+                <img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\five.svg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
