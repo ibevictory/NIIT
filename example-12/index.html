@@ -37,6 +37,7 @@
         }
         .header {
             width: 900px;
+            height: 300px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -64,6 +65,31 @@
         .last-item {
             order: -1;
         }
+        .social, .subscribe {
+            align-self: flex-end;
+            margin-bottom: 20px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-item {
+            border: 1px solid #fff;
+            background-color: #D6E9FE;
+            height: 200px;
+            flex: 1;
+        }
+        .footer-three {
+            flex: 2;
+        }
+        .footer-one, .footer-three {
+            background-color: #5995DA;
+            flex: initial;
+            width: 300px;
+        }
+        .signup {
+            margin-left: auto;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -71,10 +97,10 @@
     <div class="menu-container">
         <div class="menu">
             <div class="date">Nov 26, 2019</div>
-            <div class="links">
-                <div class="signup">Sign Up</div>
-                <div class="login">Login</div>
-            </div>
+            
+            <div class="signup">Sign Up</div>
+            <div class="login">Login</div>
+            
         </div>
     </div>
     <div class="header-container">
@@ -102,6 +128,11 @@
                 <img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\five.svg" alt="">
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <div class="footer-item footer-one"></div>
+        <div class="footer-item footer-two"></div>
+        <div class="footer-item footer-three"></div>
     </div>
 </body>
 </html>
