@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 1200px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .example {
+            display: flex;
+            /*background-color: lightblue;*/
+            justify-content: space-around;
+            width: 800px;
+            margin: 50px 0;
+            background-color: #D6E9FE;
+        }
+        /*.item {
+            flex: 1;
+            padding: 1px;
+            margin-top: 20px;
+            background-color: lightblue;
+            padding-left: 100px;
+        }*/
+        .item-relative {
+            position: relative;
+            top: 30px;
+            left: -30px;
+        }
+        .item img {
+            display: block;
+        }
+        .item-absolute {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .absolute {
+            position: relative;
+        }
+        .item-fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="example relative">
+            <div class="item"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\static.svg" alt=""></div>
+            <div class="item item-relative"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\relative.svg" alt=""></div>
+            <div class="item"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\static.svg" alt=""></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="example absolute">
+            <div class="item"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\static.svg" alt=""></div>
+            <div class="item item-absolute"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\absolute.svg" alt=""></div>
+            <div class="item"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\static.svg" alt=""></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="example fixed">
+            <div class="item"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\static.svg" alt=""></div>
+            <div class="item item-fixed"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\fixed.svg" alt=""></div>
+            <div class="item"><img src="C:\Users\nwach\OneDrive\Creative Cloud Files\AppData\Desktop\NIIT\find\static.svg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

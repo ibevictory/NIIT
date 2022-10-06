@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Exercise</title>
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            border: 1px dashed black;
+            flex: initial;
+            height: 50px;
+        }
+        .home, .about, .products, .contact {
+            padding: 10px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgb(15, 15, 177);
+            margin: 10px;
+        }
+
+
+        .container-2 {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            flex: initial;
+            height: 200px;
+        }
+        .one, .two, .three {
+            padding: 2px;
+            width: 300px;
+            flex: 1;
+            margin: 10px;
+        }
+        .one, .two, .three {
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: rgb(15, 15, 177);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home">Home</div>
+        <div class="about">About Us</div>
+        <div class="products">Products</div>
+        <div class="contact">Contact Us</div>
+    </div>
+
+    <div class="container-2">
+        <div class="one"><p>I am small</p></pI></div>
+        <div class="two"><p>I have more content than the very small item.</p></div>
+        <div class="three"><p>I have lots content that i dont know where it is all going to go. I'm glad that CSS is very good at dealing with situations where we end up with more words than expected!.</p></div>
+    </div>
+</body>
+</html>
